@@ -10,6 +10,9 @@ public class Main {
 
     BoxOfCandy b = new BoxOfCandy(box);
     System.out.println(b);
-    
+//test cases A
+    System.out.println(b.moveCandyToFirstRow(0));
+    System.out.println(b.moveCandyToFirstRow(1));
+    System.out.println(b.moveCandyToFirstRow(2));
     }
 }
