@@ -29,5 +29,13 @@ public boolean moveCandyToFirstRow(int col)
     }}
     return false;
     
-}}
+}
+public Candy removeNextByFlavor(String flavor)
+{
+    for (int row = box.length - 1; row >= 0; row --)
+    {
+        
+    }
+}
+}
     
