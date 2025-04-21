@@ -5,19 +5,7 @@ public class BoxOfCandy
     {
         box = b;
     }
-public String toString()
-{
-    String s ="";
-    for (int row = 0; row < box.length; row ++)
-    {
-        for (int col = 0; col < box[0].length; col ++)
-        {
-            s += box[row][col] + " ";
-        }
-        s += "\n";
-    }
-    return s;
-}       
+
 public boolean moveCandyToFirstRow(int col)
 {
     if (box[0][col] != null) return true;
@@ -30,16 +18,28 @@ public boolean moveCandyToFirstRow(int col)
     return false;
     
 }
-public Candy removeNextByFlavor(String flavor)
-{
-    for (int row = box.length - 1; row >= 0; row --)
-    {
+public Candy removeNextByFlavor(String flavor){
+    for (int row = box.length - 1; row >= 0; row --){
         for(int col = 0; col < box[0].length; col++){
             Candy c = box[row][col];
             if (c != null && c.getFlavor().equals(flavor)){
                 return box[row][col] = null;
                 return c;
-}
+
 }}}
 return null;}
+
+public String toString()
+{
+    String s ="";
+    for (int row = 0; row < box.length; row ++)
+    {
+        for (int col = 0; col < box[0].length; col ++)
+        {
+            s += box[row][col] + " ";
+        }
+        s += "\n";
+    }
+    return s;
+}   }    
     
