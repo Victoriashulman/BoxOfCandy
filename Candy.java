@@ -3,11 +3,13 @@ private String flavor;
 public Candy(String f)
 {
     flavor = f;
+    
 }
 public String toString()
 {
     return flavor;
 }
+
 }
 
 

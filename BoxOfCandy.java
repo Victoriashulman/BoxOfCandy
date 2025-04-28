@@ -23,11 +23,11 @@ public Candy removeNextByFlavor(String flavor){
         for(int col = 0; col < box[0].length; col++){
             Candy c = box[row][col];
             if (c != null && c.getFlavor().equals(flavor)){
-                return box[row][col] = null;
+                 box[row][col] = null;
                 return c;
 
 }}}
-return null;}
+}
 
 public String toString()
 {
