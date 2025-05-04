@@ -27,6 +27,7 @@ public Candy removeNextByFlavor(String flavor){
                 return c;
 
 }}}
+return null;
 }
 
 public String toString()

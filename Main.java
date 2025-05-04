@@ -18,17 +18,18 @@ public class Main {
     box = new Candy[3][5];
     box[0][0] = new Candy("lime");
     box[0][1] = new Candy("lime");
-    box[0][3] = new Candy("Lemon");
+    box[0][3] = new Candy("lemon");
     box[1][0] = new Candy("orange");
     box[1][3] = new Candy("lime");
     box[1][4] = new Candy("lime");
-    box[2][0] = new Candy("Cherry");
-    box[2][2] = new Candy("Lemon");
-    box[0][4] = new Candy ("Orange");
+    box[2][0] = new Candy("cherry");
+    box[2][2] = new Candy("lemon");
+    box[0][4] = new Candy ("orange");
     BoxOfCandy c = new BoxOfCandy(box);
     System.out.println(c);
+    //test cases b
     System.out.println(c.removeNextByFlavor("cherry"));
-
-
+    System.out.println(c.removeNextByFlavor("lime"));
+    System.out.println(c.removeNextByFlavor("grape"));
     }
 }

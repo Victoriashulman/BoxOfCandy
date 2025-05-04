@@ -11,7 +11,7 @@ public String toString()
     return flavor;
 }
 public String getFlavor() {
-    return ;
+    return flavor;
 }
 }
 
